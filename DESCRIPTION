@@ -1,2 +1,5 @@
 Descrition:
 "assignHome.html" is home page of assignment.
+
+You need to run the mongod Database  1st then php server and then run 'assignHome.html' and i placed php script on 'task2.php' which
+send data to mongo Database.
