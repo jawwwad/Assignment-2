@@ -1,0 +1,93 @@
+<html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<head>
+<style>
+
+body{ background-color: #D2691E; }
+header {background-color: #999;
+	text-align: center; height: 100px; }
+.container{
+height:100px;
+width:1347px;
+border:2px dotted #F00;
+border-left:none;
+border-right:none;
+text-align:center;
+}
+
+.original,
+.box {
+  border-radius: 6px;
+}
+.original {
+  background: #eaeaed;
+  border: 1px dashed #cecfd5;
+  float: left;
+  margin: 12px 15px;
+}
+.box {
+  background: #2db34a;
+  height: 50px;
+  line-height: 50px;
+  text: 30px;
+  text-align: center;
+  width: 55px;
+}
+.spin {
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.spin:hover {
+    animation: spin 5s linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.box-1 {
+  transform: scaleX(.5);
+}
+.box-2 {
+  transform: scaleY(1.15);
+}
+.box-3 {
+  transform: scaleX(.5, 1.10);
+}
+
+
+
+.container div{
+display: inline-block;
+border: 2px #ccc;
+vertical-align: middle;
+line-height: 100px;
+} 
+.column-left{  display: inline-block;font-weight: bold;width: 70%;  height:100px; font-family: Arial, Helvetica, sans-serif;}
+.column-right{ font-weight: bold; display: inline-block; width: 70%;  height:100px; border-right: 2px dotted #ccc; font-family: Arial, Helvetica, sans-serif;}
+.column-center{font-family: Arial, Helvetica, sans-serif; font-weight: bold; display: inline-block; width: 70%; height:100px;}
+
+ </style>
+<script type="text/javascript">
+	
+</script>
+
+ </head>
+<body>
+<p></p><p></p>
+
+<header>
+	<p>Head | About Us | Experience</p>
+</header >
+<br>
+<div  align="center">
+   <div class="column-left original spin box box-3"> <a href="About.html">calender</a></div>
+   <div class="column-center original spin box box-3"> <a href="task2.php">Clock</a></div>
+   <div class="column-right original spin box box-3"> <a href="wheather.html">Wheather</div>
+</div> 
+
+</body>
+</html>
